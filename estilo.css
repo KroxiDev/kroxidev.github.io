@@ -1,0 +1,106 @@
+:root {
+  color-scheme: light dark;
+  --fondo: #faf8f5;
+  --texto: #1f1d1a;
+  --suave: #5c5750;
+  --acento: #9a6a14;
+  --borde: #e4dfd6;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --fondo: #161513;
+    --texto: #ece8e1;
+    --suave: #a49d92;
+    --acento: #e0b45c;
+    --borde: #2e2b27;
+  }
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+  background: var(--fondo);
+  color: var(--texto);
+  font:
+    1.0625rem/1.65 system-ui,
+    -apple-system,
+    'Segoe UI',
+    Roboto,
+    Ubuntu,
+    sans-serif;
+}
+
+main {
+  max-width: 42rem;
+  margin: 0 auto;
+  padding: 3rem 1rem 4rem;
+}
+
+header {
+  margin-bottom: 2.5rem;
+}
+
+.marca {
+  margin: 0 0 0.5rem;
+  color: var(--acento);
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+h1 {
+  margin: 0 0 0.75rem;
+  font-size: 2.1rem;
+  line-height: 1.2;
+}
+
+h2 {
+  margin: 2.25rem 0 0.5rem;
+  font-size: 1.2rem;
+}
+
+p,
+ul {
+  margin: 0 0 1rem;
+}
+
+ul {
+  padding-left: 1.25rem;
+}
+
+li {
+  margin-bottom: 0.35rem;
+}
+
+.entrada {
+  color: var(--suave);
+  font-size: 1.15rem;
+}
+
+a {
+  color: var(--acento);
+  text-underline-offset: 0.15em;
+}
+
+code {
+  font-family: ui-monospace, 'JetBrains Mono', monospace;
+  font-size: 0.9em;
+  overflow-wrap: anywhere;
+}
+
+footer {
+  margin-top: 3rem;
+  padding-top: 1.25rem;
+  border-top: 1px solid var(--borde);
+  color: var(--suave);
+  font-size: 0.9rem;
+}
